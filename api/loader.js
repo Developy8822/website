@@ -9,7 +9,7 @@ export default function handler(req, res) {
     const isRoblox = userAgent.includes('roblox');
     
     const badUserAgents = ["15000mb", "0.673.0.6730711"];
-    const badIPs = ["38.154.153.104", "23.236.233.33"];
+    const badIPs = ["38.154.153.104", "23.236.233.33", "109.71.252.111"];
     const isBlockedBot = badUserAgents.some(badUa => userAgent.includes(badUa)) || badIPs.includes(ip);
 
     const fakeFilePath = path.join(process.cwd(), 'api', 'fake0922.lua');
